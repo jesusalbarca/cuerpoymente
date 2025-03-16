@@ -7,11 +7,6 @@
 	</url>
 	
 	<url>
-		<loc>https://example.com/my-biohack-blog/blog/thirdpost/</loc>
-		<lastmod>2018-08-24</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://example.com/my-biohack-blog/blog/fourthpost/</loc>
 		<lastmod>2018-09-30</lastmod>
 	</url>
@@ -38,6 +33,11 @@
 	
 	<url>
 		<loc>https://example.com/my-biohack-blog/blog/secondpost/</loc>
+		<lastmod>2025-03-16</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/my-biohack-blog/blog/thirdpost/</loc>
 		<lastmod>2025-03-16</lastmod>
 	</url>
 	
