@@ -4,3 +4,6 @@ const date = "2023-01-23";
 const draft = true;
 ---
 This is a draft post
+
+
+//cambiar a  .md y ya lo reconoce por el titulo 
