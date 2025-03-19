@@ -37,6 +37,11 @@
 	</url>
 	
 	<url>
+		<loc>https://example.com/my-biohack-blog/blog/pre_blog/firstpost/</loc>
+		<lastmod>2025-03-17</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/my-biohack-blog/feed/feed.xml</loc>
 		<lastmod>2025-03-19</lastmod>
 	</url>
