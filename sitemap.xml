@@ -37,8 +37,18 @@
 	</url>
 	
 	<url>
-		<loc>https://example.com/my-biohack-blog/blog/pre_blog/firstpost/</loc>
+		<loc>https://example.com/my-biohack-blog/blog/consejos_nutricion/</loc>
 		<lastmod>2025-03-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/my-biohack-blog/blog/tecnica_meditacion/</loc>
+		<lastmod>2025-03-18</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/my-biohack-blog/blog/rutina_ejercicio/</loc>
+		<lastmod>2025-03-19</lastmod>
 	</url>
 	
 	<url>
