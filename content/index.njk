@@ -2,64 +2,68 @@
 eleventyNavigation:
   key: "Inicio"
   order: 1
-numberOfLatestPostsToShow: 5
+numberOfLatestPostsToShow: 3
 ---
 
-<h1>Últimos Artículos sobre Biohacking y Bienestar Personal</h1>
 
-<p>Conoce las mejores estrategias para mejorar tu salud y rendimiento. Optimiza tu vida con <strong>biohacking</strong>, tecnología de bienestar y consejos prácticos.</p>
 
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+<header>
+  <h1>Bienvenido a Cuerpo y Mente</h1>
+  <p>Tu guía integral para alcanzar el equilibrio perfecto entre salud física y mental. Descubre consejos, técnicas y novedades en nutrición, meditación, ejercicio y autooptimización.</p>
+</header>
 
-<!-- Metaetiquetas para mejorar la visibilidad en Google -->
-<meta name="description" content="Descubre las últimas estrategias de biohacking y bienestar personal. Aprende sobre suplementos, gadgets y técnicas para optimizar tu salud y rendimiento." />
-<meta name="keywords" content="biohacking, bienestar personal, optimización de salud, rendimiento, suplementos, gadgets, autooptimización, salud tecnología" />
-<meta property="og:title" content="Biohacking y Bienestar Personal: Estrategias para Optimizar tu Salud" />
-<meta property="og:description" content="Explora artículos y reseñas de productos de biohacking para mejorar tu rendimiento y salud personal. Lee sobre técnicas, suplementos y tecnología de última generación." />
-<meta property="og:image" content="/images/biohacking-image.jpg" /> <!-- Imagen representativa para redes sociales -->
+<main>
+  {% set postsCount = collections.posts | length %}
+  {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 
-<p>Últimos artículos publicados:</p>
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% include "postslist.njk" %}
+  <section>
+    <h2>Últimos Artículos sobre Bienestar Integral</h2>
+    <p>Explora las estrategias más efectivas para transformar tu vida: desde rutinas de ejercicio y alimentación saludable hasta técnicas de meditación y biohacking. Aquí encontrarás inspiración para cuidar tanto tu cuerpo como tu mente.</p>
+  </section>
 
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>¿Quieres aprender más sobre <strong>suplementos, gadgets de biohacking y hábitos saludables?</strong> Visita nuestro <a href="/blog/">archivo de artículos</a> para explorar todos nuestros posts.</p>
-{% endif %}
+  <!-- Listado de publicaciones recientes -->
+  {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+  {% include "postslist.njk" %}
 
-<!-- Optimización de contenido con palabras clave: Biohacking y Salud -->
-<section>
-	<h2>¿Por qué el Biohacking está revolucionando el Bienestar?</h2>
-	<p>El <strong>biohacking</strong> es el futuro del bienestar personal. Al combinar la nutrición inteligente, el uso de dispositivos wearables y la optimización del sueño, puedes alcanzar tu máximo potencial.</p>
-	<p>Aprende cómo mejorar tu <strong>salud, rendimiento mental y físico</strong> con la aplicación de técnicas avanzadas de <strong>biohacking</strong>.</p>
-	<p>Lee nuestras <a href="/reseñas/">reseñas de productos de biohacking</a> y encuentra los <strong>mejores suplementos y dispositivos</strong> para optimizar tu vida.</p>
-</section>
+  {% set morePosts = postsCount - numberOfLatestPostsToShow %}
+  {% if morePosts > 0 %}
+  <section>
+    <p>¿Quieres descubrir aún más consejos para potenciar tu bienestar? Visita nuestro <a href="/blog/">archivo de artículos</a> para explorar todos nuestros contenidos.</p>
+  </section>
+  {% endif %}
 
-<!-- CTA optimizado para conversión -->
-<section>
-	<h2>Recibe las Últimas Noticias sobre Biohacking</h2>
-	<p>Suscríbete y accede a contenido exclusivo sobre <strong>técnicas de autooptimización, gadgets y suplementos</strong> que te ayudarán a mejorar tu salud.</p>
-	<form action="/suscribirse" method="POST">
-		<input type="email" name="email" placeholder="Introduce tu correo electrónico" required />
-		<button type="submit">Suscribirme</button>
-	</form>
-</section>
+  <!-- Sección de contenido SEO y temático -->
+  <section>
+    <h2>El Secreto del Equilibrio: Cuerpo y Mente en Armonía</h2>
+    <p>En <strong>Cuerpo y Mente</strong> creemos que el bienestar integral surge de la unión de hábitos saludables y técnicas de autooptimización. Nuestro enfoque combina lo mejor de la nutrición consciente, el ejercicio, la meditación y hasta el biohacking para que logres una vida plena.</p>
+    <p>Descubre cómo pequeños cambios en tu rutina pueden generar grandes mejoras en tu salud y rendimiento. Encuentra guías prácticas, reseñas de productos y estrategias para cuidar de tu cuerpo y potenciar tu mente.</p>
+    <p>Lee nuestras <a href="/reseñas/">reseñas de productos y técnicas</a> y descubre las herramientas que te ayudarán a transformar tu vida.</p>
+  </section>
 
-<!-- Optimización de enlaces internos con anchor text SEO-friendly -->
-<section>
-	<h3>Explora más sobre Biohacking</h3>
-	<ul>
-		<li><a href="/biohacking/optimización-del-sueño/" title="Optimización del Sueño para Mejorar tu Rendimiento">Optimización del Sueño para Mejorar tu Rendimiento</a></li>
-		<li><a href="/biohacking/suplementos-probióticos/" title="Beneficios de los Suplementos Probióticos para tu Salud">Suplementos Probióticos para tu Salud</a></li>
-		<li><a href="/biohacking/tecnología-de-biohacking/" title="La Tecnología de Biohacking para la Autooptimización">Tecnología de Biohacking para la Autooptimización</a></li>
-	</ul>
-</section>
+  <!-- Llamado a la acción (CTA) -->
+  <section>
+    <h2>Suscríbete y Recibe Contenido Exclusivo</h2>
+    <p>Mantente informado sobre las últimas novedades en bienestar integral. Recibe directamente en tu correo consejos, guías y actualizaciones que te ayudarán a alcanzar el equilibrio entre cuerpo y mente.</p>
+    <form action="/suscribirse" method="POST">
+      <input type="email" name="email" placeholder="Introduce tu correo electrónico" required />
+      <button type="submit">Suscribirme</button>
+    </form>
+  </section>
 
-<!-- Incluimos imágenes optimizadas con texto alternativo -->
-<section>
-	<h3>Productos de Biohacking Recomendados</h3>
-	<img src="/img/biohacking1.jpg" alt="Suplemento para mejorar el rendimiento físico y mental" />
-	<img src="/img/biohacking2.jpg" alt="Dispositivo wearable para monitorizar la salud y el rendimiento" />
-</section>
-   
+  <!-- Enlaces internos SEO-friendly -->
+  <section>
+    <h3>Explora Más Temas de Bienestar</h3>
+    <ul>
+      <li><a href="/blog/consejos_nutricion/" title="Consejos de Nutrición para un Cuerpo Sano">Consejos de Nutrición para un Cuerpo Sano</a></li>
+      <li><a href="/blog/tecnica_meditacion/" title="Técnicas de Meditación para una Mente Clara">Técnicas de Meditación para una Mente Clara</a></li>
+      <li><a href="/blog/rutina_ejercicio/" title="Rutinas de Ejercicio para Mejorar tu Rendimiento">Rutinas de Ejercicio para Mejorar tu Rendimiento</a></li>
+    </ul>
+  </section>
+
+  <!-- Imágenes optimizadas con texto alternativo -->
+  <section>
+    <h3>Galería de Inspiración</h3>
+    <img src="/img/bienestar1.jpg" alt="Plato saludable y equilibrado que nutre cuerpo y mente" title="Plato saludable y equilibrado que nutre cuerpo y mente"/>
+    <img src="/img/bienestar2.jpg" alt="Persona meditando al aire libre, simbolizando equilibrio y paz mental" title="Persona meditando al aire libre, simbolizando equilibrio y paz mental" />
+  </section>
+</main>
